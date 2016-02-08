@@ -10,6 +10,7 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+  background-color: $light-green;
 }
 
 
@@ -17,9 +18,16 @@ html {
 	box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+  padding: auto;
+
+}
+
 
 body{
-  font-family: sans-serif;
+
+  font-family: $satisfy;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
@@ -29,8 +37,12 @@ body{
 }
 
 header {
-  padding: 0 1em;
+  padding: .5em 1em;
   position: relative;
+}
+
+h1 {
+  font-size: 4em;
 }
 
 .toggle-btn {
@@ -45,16 +57,17 @@ header {
   li {
     list-style-type: none;
     &:first-child a {
-      border-top: 1px solid $light-grey;
+      border-top: 1px solid $meduim-green;
     }
   }
   a {
   display: block;
   padding: .5em 1em;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $meduim-green;
   text-decoration: none;
   color: $text-color;
   text-align: center;
+  font-size: 1.5em;
 
   }
 }
@@ -65,8 +78,8 @@ header {
   text-decoration: none;
   height: 40px;
   width: 40px;
+  font-size: 2em;
   &:before {
-    border: 1px solid $light-grey;
     display: inline-block;
     padding: 13px 11px;
     height: 40px;
